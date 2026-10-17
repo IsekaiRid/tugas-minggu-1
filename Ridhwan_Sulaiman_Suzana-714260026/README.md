@@ -1,7 +1,7 @@
 # Tugas Minggu Pertama
 
-Nama	: RIDHWAN SULAIMAN SUZANA
-NPM	: 714260026
+Nama: RIDHWAN SULAIMAN SUZANA
+NPM: 714260026
 Kelompok: 05
 
 Folder ini berisi latihan dan tugas Modul 1 pada pelatihan
