@@ -1,32 +1,46 @@
-# ===================================================
-# Tugas Mandiri 1 - Pemrograman Dasar
-# Nama : Vania Gita Puji Astutik
-# NIM : 714260017
-# Kelas : 11
+# ==========================================
+# Tugas Mandiri Modul 1 - Program Percabangan
+# Nama  : Vania Gita Puji Astutik
+# NIM   : 714260017
+# Kelas : D4 TI 11
+# ==========================================
 
-print("===================================")
-print("    Pengolahan Nilai ")
-print("===================================")
+print("=============================================")
+print("      PROGRAM KONVERSI NILAI MAHASISWA       ")
+print("=============================================")
 
-nilai = float(input("Masukkan nilai (0-100): "))
+# Seluruh nilai wajib berasal dari input()
+nilai_input = input("Masukkan nilai akhir (0-100): ")
+nilai = float(nilai_input)
 
-if nilai > 100:
-    print("Nilai yang anda masukkan tidak valid. Silakan masukkan nilai antara 0 hingga 100.")
+print("-" * 45)
+
+# Pengecekan agar nilai di luar 1-100 di tolak
+if nilai < 0 or nilai > 100:
+    print("Error: Nilai ditolak! Harap masukkan angka dalam rentang 0-100.")
+
 elif nilai >= 80:
-    print(f"Nilai anda {nilai} setara dengan A")
-    print("Selamat, anda lulus dengan predikat sangat baik.")
+    huruf_mutu = "A"
+    keterangan = "Lulus"
 elif nilai >= 70:
-    print(f"Nilai anda {nilai} setara dengan B")
-    print("Selamat, anda lulus dengan predikat baik.")
+    huruf_mutu = "B"
+    keterangan = "Lulus"
 elif nilai >= 60:
-    print(f"Nilai anda {nilai} setara dengan C")
-    print("Selamat, anda lulus dengan predikat cukup.")
+    huruf_mutu = "C"
+    keterangan = "Lulus"
 elif nilai >= 50:
-    print(f"Nilai anda {nilai} setara dengan D")
-    print("Selamat, anda lulus dengan predikat cukup.")
-elif nilai >= 0:
-    print(f"Nilai anda {nilai} setara dengan E")
-    print("Maaf, anda tidak lulus.")
+    huruf_mutu = "D"
+    keterangan = "Tidak Lulus"
+else:
+    huruf_mutu = "E"
+    keterangan = "Tidak Lulus"
 
-else: 
-     print("Nilai yang anda masukkan tidak valid. Silakan masukkan nilai antara 0 hingga 100.")
+# f-strings digunakan untuk menampilkan nilai, huruf mutu, dan keterangan
+if 0 <= nilai <= 100:
+    print(f"Nilai Angka  : {nilai}")
+    print(f"Huruf Mutu   : {huruf_mutu}")
+    print(f"Keterangan   : {keterangan}")
+
+print("=============================================")
+print("  Terima kasih telah menggunakan program ini! ")
+print("=============================================")
