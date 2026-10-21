@@ -1,3 +1,11 @@
+# =================================================
+# Tugas Mandiri Modul 1 - Program Percabangan
+# Nama  : RIDHWAN SULAIMAN SUZANA
+# NIM   : 714260026
+# Kelas : D4-TI 1B
+# Kelompok : 5 BURGERKILL
+# =================================================
+
 print("========================================")
 print("        MELIHAT HURUF MUTU NILAI")
 print("========================================")
